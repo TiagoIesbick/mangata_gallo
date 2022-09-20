@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(243, 244, 247);
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    color: rgb(80, 88, 95);
+}
+
+header > img {
+    display: block;
+    margin: 1rem auto;    
+    width: 15rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin-bottom: 0.7rem;    
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+section article {
+    flex: 1;
+}
+
+footer {
+    display: flex;
+    margin: 0.5rem;
+}
+
+footer div {
+    flex: 1;
+    text-align: center;
+}
+
+footer img {
+    width: 6rem;    
+}
+
+.responsive {
+    width: 100%;    
+    height: auto;         
+}
+
+nav a {
+    color: rgb(80, 88, 95);
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: rgb(64, 70, 75);
+}
+
+a:hover, a:active {   
+    font-weight: bolder;
+    color:rgb(49, 49, 49);    
+}
+
+.underline {
+    display: inline;
+    position: relative;
+    overflow: hidden;
+}
+
+.underline:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    width: 0;
+    bottom: -5px;
+    background: rgb(49, 49, 49);
+    height: 2px;
+    transition-property: width;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+.underline:hover:after, .underline:focus:after, .underline:active:after {
+    left: 0;
+    right: auto;
+    width: 100%;
+}
+
+article > header {
+    position: relative;
+    background-image: url("https://cdn.create.vista.com/api/media/medium/249551896/stock-photo-panoramic-shot-man-making-marriage?token=O1jWMN9SAfRL7JBskbnoIaQdG9UK5DR30sYkhqLnP94tYtMVhteBKoPYfyknjefR");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 20rem;      
+}
+
+.bottom {    
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: rgb(236, 232, 232);
+    padding: 0.5rem;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, 
+        rgba(0, 0, 0, 0.01) 1%, 
+        rgba(0, 0, 0, 0.65) 98%,
+        rgba(0, 0, 0, 0.65) 100%);
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.bottom img {
+    width: 17rem;
+    animation: logo_animation 5s infinite linear;
+}
+
+@keyframes logo_animation {
+    50% {transform: scale(1.1);}
+}
+
+.article { 
+    margin: 2rem;   
+    padding: 2rem;    
+    box-shadow: 10px 10px 50px grey; 
+    position: relative;
+}
+
+.article:hover {
+    transform: scale(1.025);
+    transition: 1s;
+}
+
+.article-details {
+    display: block;
+    text-align: center; 
+    line-height: 1.5;      
+}
+
+.article-link {
+    margin-top: 0.6rem;    
+}
